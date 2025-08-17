@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Data</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        /* Apply the Inter font to all elements */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* Style the iframe to be responsive and fit the container */
+        .responsive-iframe {
+            width: 100%;
+            height: 800px; /* Adjust height as needed */
+            border: none;
+            border-radius: 0.75rem; /* Rounded corners */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main container for the data display -->
+    <div class="w-full max-w-4xl bg-white p-8 rounded-2xl shadow-xl border border-gray-200">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Google Sheets Data</h1>
+
+        <!-- Container for the iframe -->
+        <div class="overflow-x-auto relative">
+            <iframe 
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQpr0JiSXqr49s-08712Z4LuqWp71zNgiGREbPW_nHTnXL1ReKwYzLM1ZE-VJKEho6bqblqOOWyf5-n/pubhtml?gid=1770836006&amp;single=true&amp;widget=true&amp;headers=false"
+                class="responsive-iframe"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
